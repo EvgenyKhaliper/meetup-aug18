@@ -2,7 +2,7 @@ configuration:
   initialization:
     script: init.sh
   start:
-    script: cm.sh
+    script: start.sh
   healthcheck:
     wait_for_ports: 80
     timeout: 360
