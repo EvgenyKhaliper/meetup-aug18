@@ -1,6 +1,4 @@
 configuration:
-  healthcheck:
-    timeout: 1000
   initialization:
     script: init.sh
   start:
