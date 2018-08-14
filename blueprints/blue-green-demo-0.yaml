@@ -11,5 +11,5 @@ inputs:
 - VERSION:
     description: V1 V2
 - COLOR:
-    description: #275CB2 #5EB227
+    description: 275CB2 5EB227
 environmentType: sandbox
