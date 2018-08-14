@@ -5,7 +5,7 @@ apt-get update && apt-get install --no-install-recommends --no-install-suggests 
 
 # kill -9 $(ps aux | grep 'nodejs app.js' | awk '{print $2}')
 
-cat > app.js <<ENDOFCONTENT
+cat > ~/app.js <<ENDOFCONTENT
 var http = require('http');
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});

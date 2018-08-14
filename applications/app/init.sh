@@ -1,3 +1,3 @@
 #!/bin/bash
 
-nodejs app.js > /dev/null & 
+nodejs ~/app.js > /dev/null &
