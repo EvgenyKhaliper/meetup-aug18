@@ -4,6 +4,7 @@ clouds:
 - aws: eu-west-1
 applications:
 - app:
+    instances: 2
     input_values:
     - VERSION: $VERSION
     - COLOR: $COLOR

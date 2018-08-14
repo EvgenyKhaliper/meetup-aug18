@@ -1,7 +1,7 @@
 #!/bin/bash
 
 curl -sL https://deb.nodesource.com/setup_6.x | /bin/bash -E;
-sudo apt-get update && sudo apt-get install --no-install-recommends --no-install-suggests -y nodejs;
+apt-get update && apt-get install --no-install-recommends --no-install-suggests -y nodejs;
 
 # kill -9 $(ps aux | grep 'nodejs app.js' | awk '{print $2}')
 
