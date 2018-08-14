@@ -18,7 +18,7 @@ http.createServer(function (req, res) {
     res.write('<body style="background-color: #$COLOR">');
 
 
-    res.write('<h1 style="color: White; font-size: 72px; text-align: center">Demo $VERSION<</h1>');
+    res.write('<h1 style="color: White; font-size: 72px; text-align: center">Demo $VERSION</h1>');
 
     res.write('</body>');
     res.write('</html>');
