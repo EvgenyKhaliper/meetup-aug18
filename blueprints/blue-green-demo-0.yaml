@@ -1,0 +1,15 @@
+kind: blueprint
+spec_version: 1
+clouds:
+- aws: eu-west-1
+applications:
+- app:
+    input_values:
+    - VERSION: $VERSION
+    - COLOR: $COLOR
+inputs:
+- VERSION:
+    description: V1 V2
+- COLOR:
+    description: #275CB2 #5EB227
+environmentType: sandbox
