@@ -3,6 +3,9 @@ configuration:
     script: init.sh
   start:
     script: cm.sh
+  healthcheck:
+    wait_for_ports: 80
+    timeout: 180
 source:
   image:
     ami:
