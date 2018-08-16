@@ -3,7 +3,11 @@
 curl -sL https://deb.nodesource.com/setup_6.x | /bin/bash -E;
 apt-get update && apt-get install --no-install-recommends --no-install-suggests -y nodejs;
 
-# kill -9 $(ps aux | grep 'nodejs app.js' | awk '{print $2}')
+if [ $VERSION == "V1" ] ; then
+    COLOR = "#275CB2"
+else
+    COLOR = "#5EB227"
+fi
 
 cat > ~/app.js <<ENDOFCONTENT
 var http = require('http');
@@ -15,7 +19,7 @@ http.createServer(function (req, res) {
     res.write('<head>');
     res.write('<title>Demo $VERSION</title>');
     res.write('</head>');
-    res.write('<body style="background-color: #$COLOR">');
+    res.write('<body style="background-color: $COLOR">');
 
 
     res.write('<h1 style="color: White; font-size: 72px; text-align: center">Demo $VERSION</h1>');

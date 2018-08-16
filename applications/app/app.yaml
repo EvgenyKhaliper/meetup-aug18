@@ -20,7 +20,6 @@ infrastructure:
         path: ''
 inputs:
   - VERSION
-  - COLOR
 debugging:
   connection_protocol: SSH
 kind: application
