@@ -4,9 +4,9 @@ curl -sL https://deb.nodesource.com/setup_6.x | /bin/bash -E;
 apt-get update && apt-get install --no-install-recommends --no-install-suggests -y nodejs;
 
 if [ $VERSION == "V1" ] ; then
-    COLOR = "#275CB2"
+    COLOR="#275CB2"
 else
-    COLOR = "#5EB227"
+    COLOR="#5EB227"
 fi
 
 cat > ~/app.js <<ENDOFCONTENT
